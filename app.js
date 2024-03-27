@@ -50,3 +50,8 @@ closePopupBtn.addEventListener('click', () => {
     toggleOverlay();
 });
 
+// JavaScript for toggling the dropdown menu
+function toggleMenu() {
+    var dropdownMenu = document.getElementById("dropdownMenu");
+    dropdownMenu.classList.toggle("active");
+}

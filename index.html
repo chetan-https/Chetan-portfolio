@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <!-- <header>
         <h1>My Portfolio</h1>
         <nav>
             <ul>
@@ -19,6 +19,39 @@
                 <li><a href="#experience">Work Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+        </nav>
+    </header> -->
+
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul class="desktop-menu">
+                <!-- Regular navigation links -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Work Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Hamburger menu icon -->
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <!-- You can use an icon library like Font Awesome for the hamburger icon -->
+                    &#9776;
+                </div>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu" id="dropdownMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Work Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 

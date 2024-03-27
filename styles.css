@@ -35,7 +35,7 @@ nav ul li a:hover {
 
 /* Default styles for navigation */
 nav {
-    text-align: center;
+    text-align: right;
     margin-top: 20px;
 }
 
@@ -624,5 +624,67 @@ button[type="submit"]:hover {
     font-size: 20px;
     cursor: pointer;
     z-index: 1;
+}
+
+
+
+/* CSS for hamburger menu */
+.hamburger-menu {
+    display: none; /* Hide by default */
+}
+
+@media screen and (max-width: 500px) {
+    /* Hide regular navigation links */
+    nav ul {
+        display: none;
+    }
+
+    /* Display hamburger menu */
+    .hamburger-menu {
+        display: block;
+        position: relative; /* Add relative positioning */
+    }
+
+    /* Additional styles for the hamburger icon */
+    .hamburger-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Styles for the dropdown menu */
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 150px; /* Position the dropdown menu to the right of the hamburger icon */
+        background-color: #664229;
+        width: 50%;
+    }
+
+    .dropdown-menu li {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Show dropdown menu when hamburger icon is clicked */
+    .dropdown-menu.active {
+        display: block;
+    }
+}
+
+/* CSS for responsive image in the home section */
+.home-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 500px) {
+    /* Adjust image size for screens less than 500px width */
+    .home-image img {
+        width: 100%; /* Adjust the width as needed */
+        max-width: none;
+        height: auto;
+    }
 }
 
