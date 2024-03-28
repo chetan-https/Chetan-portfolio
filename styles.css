@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #d2b48c;
+    background-color: #B99976;
     color: #fff;
     padding: 20px;
 }
@@ -81,12 +81,21 @@ nav ul li a:hover {
 .home-image {
     flex: 1;
     padding-left: 20px; /* Adjust spacing between text and image */
+    transition: transform 0.5s ease; /* Smooth transition for the rotation */
 }
 
-.home-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius:10px;
+
+.home-image img:hover {
+    animation: rotateImage 3s ease-in-out forwards; /* Apply animation on hover */
+}
+
+@keyframes rotateImage {
+    0% {
+        transform: rotateY(0deg); /* Initial state */
+    }
+    100% {
+        transform: rotateY(180deg); /* Rotate the image by 180 degrees on its Y axis */
+    }
 }
 
 .home-text {
@@ -393,7 +402,7 @@ nav ul li a:hover {
         overflow: hidden; /* Ensure images don't overflow */
         border-radius:10px;
     }
-}
+} 
 
 /* Styles for experience section */
 .experience-section {
@@ -652,7 +661,7 @@ button[type="submit"]:hover {
     left: 400px;
     right: 400px;
     bottom: 50px;
-    background-color: #fff;
+    background: linear-gradient(to right, #D2B48C, #E5D3B3, #B99976, #987554, #664229);
     border: 1px solid #ccc;
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
@@ -796,4 +805,3 @@ button[type="submit"]:hover {
     }
     
 }
-
